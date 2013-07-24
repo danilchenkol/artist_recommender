@@ -11,5 +11,5 @@ The recommender uses training data from multiple datasets (Last.fm, Deezer, etc.
 The above information is used to compute similarity between all artists (~3k) in the dataset and recommend top-10 artists given an input artist.
 
 Usage:
- - run bin/recommender.exe;
+ - run binary/recommender.exe;
  - enter artist name (the name must be present in the dataset; check bin\outputData\artist_info.csv for the list of available artists).
