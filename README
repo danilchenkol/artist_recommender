@@ -1,0 +1,15 @@
+This project implements a Python-based music artist recommender.
+The recommender uses training data from multiple datasets (Last.fm, Deezer, etc.) to create artist profiles including the following info:
+ - Last.fm tags;
+ - ids of similar artists from Last.fm;
+ - genres (from Deezer dataset);
+ - fan countries (top-5 countries by Tweet number)
+ - fan cities (same as above);
+ - dominant fan gender;
+ - dominant fan age;
+ - ids of fans that marked an artist as favourite.
+The above information is used to compute similarity between all artists (~3k) in the dataset and recommend top-10 artists given an input artist.
+
+Usage:
+ - run bin/recommender.exe;
+ - enter artist name (the name must be present in the dataset; check bin\outputData\artist_info.csv for the list of available artists).
